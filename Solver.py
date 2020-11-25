@@ -72,8 +72,12 @@ print(Fore.GREEN +'''
                    Results
 *************************************************''')
 
-print(Fore.YELLOW +"Equation: ",a,"x^2 +",b,"x +","(",c,") = 0")
-print('''-------------------------------------------------''')
+if c < 0:
+    print(Fore.YELLOW +"Equation: ",int(a),"x^2 +",int(b),"x",int(c),"= 0")
+    print('''-------------------------------------------------''')
+else:
+    print(Fore.YELLOW +"Equation: ",int(a),"x^2 +",int(b),"x +",int(c),"= 0")
+    print('''-------------------------------------------------''')
 
 
 if determinant == 0: #real and same
