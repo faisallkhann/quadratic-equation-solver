@@ -1,5 +1,9 @@
 import math
 from colorama import Fore, Back, Style
+from colorama import init
+
+
+init()
 
 print(Fore.YELLOW +'''
 
@@ -14,9 +18,12 @@ print(Fore.YELLOW +'''
 
 
 while True:
+    init()
     
     while True:
-        a = input(Fore.RESET +"Enter the cofficient of X^2: ")
+        init()
+
+        a = input("Enter the cofficient of X^2: ")
         try:
             a = float(a)
             break
@@ -29,6 +36,7 @@ while True:
 
 
     while True:
+        init()
         b = input("Enter the cofficient of x: ")
         try:
             b = float(b)
@@ -39,6 +47,7 @@ while True:
 
 
     while True:
+        init()
         c = input("Enter the Value of Constant: ")
         try:
             c = float(c)
@@ -48,6 +57,7 @@ while True:
             continue
     break
       
+init()
 
 determinant = b * b - 4 * a * c
 sqr = math.sqrt(abs(determinant))
