@@ -28,11 +28,18 @@ while True:
             a = float(a)
             break
         except:
-            print('Bad Input!')
+            if a == "quit":
+                print("Exiting!")
+                quit()
+            else:
+                print('Bad Input!')
+            
+
             continue
     if a == 0:
         print('A Quadratic Equation Cannot Have Cofficient of X^2 = 0 \nPlease try again! or type quit to exit!')
         continue
+    
 
 
     while True:
@@ -42,9 +49,11 @@ while True:
             b = float(b)
             break
         except:
-            print('Bad Input!')        
-            continue
-
+            if b == "quit":
+                print("Exiting!")
+                quit()
+            else:
+                print('Bad Input!')
 
     while True:
         init()
@@ -53,8 +62,12 @@ while True:
             c = float(c)
             break
         except:
-            print('Bad Input!')        
-            continue
+            if c == "quit":
+                print("Exiting!")
+                quit()
+            else:
+                print('Bad Input!')
+
     break
       
 init()
@@ -72,12 +85,11 @@ print(Fore.GREEN +'''
                    Results
 *************************************************''')
 
-if c < 0:
-    print(Fore.YELLOW +"Equation: ",int(a),"x^2 +",int(b),"x",int(c),"= 0")
-    print('''-------------------------------------------------''')
-else:
-    print(Fore.YELLOW +"Equation: ",int(a),"x^2 +",int(b),"x +",int(c),"= 0")
-    print('''-------------------------------------------------''')
+
+print(Fore.YELLOW +"Equation: ","(",a,")","x^2 +","(",b,")","x +","(",c,")","= 0")
+print('''-------------------------------------------------''')
+
+
 
 
 if determinant == 0: #real and same
