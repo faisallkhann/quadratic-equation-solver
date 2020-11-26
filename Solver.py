@@ -31,7 +31,7 @@ while True:
             break
         except:
             if a == "quit":
-                print("\nExiting!")
+                print("\nExiting!\n")
                 quit()
             else:
                 print('Bad Input!')
@@ -52,7 +52,7 @@ while True:
             break
         except:
             if b == "quit":
-                print("\nExiting!")
+                print("\nExiting!\n")
                 quit()
             else:
                 print('Bad Input!')
@@ -65,7 +65,7 @@ while True:
             break
         except:
             if c == "quit":
-                print("\nExiting!")
+                print("\nExiting!\n")
                 quit()
             else:
                 print('Bad Input!')
