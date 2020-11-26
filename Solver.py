@@ -12,6 +12,8 @@ print(Fore.YELLOW +'''
 ╚═╝╚└─┘┴ ┴─┴┘┴└─┴ ┴ ┴ ┴└─┘  ╚═╝└─┘└└─┘┴ ┴ ┴ ┴└─┘┘└┘  ╚═╝└─┘┴─┘└┘ └─┘┴└─  v1.0
                     by - Faisal Khan
 
+                   Type 'quit' to exit!
+
 ''')
 
 
@@ -29,7 +31,7 @@ while True:
             break
         except:
             if a == "quit":
-                print("Exiting!")
+                print("\nExiting!")
                 quit()
             else:
                 print('Bad Input!')
@@ -50,7 +52,7 @@ while True:
             break
         except:
             if b == "quit":
-                print("Exiting!")
+                print("\nExiting!")
                 quit()
             else:
                 print('Bad Input!')
@@ -63,7 +65,7 @@ while True:
             break
         except:
             if c == "quit":
-                print("Exiting!")
+                print("\nExiting!")
                 quit()
             else:
                 print('Bad Input!')
